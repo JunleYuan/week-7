@@ -12,8 +12,8 @@ class Overworld extends Phaser.Scene {
         this.ROOMWIDTH = 512;
         this.ROOMHEIGHT = 336;
 
-        this.curX = 1024;
-        this.curY = 672;
+        this.curX = 512;
+        this.curY = 336;
 
         this.cameraX = 768;
         this.cameraY = 672;
@@ -70,7 +70,7 @@ class Overworld extends Phaser.Scene {
                     'Linear'
                 );
                 console.log("curx" + this.curX);
-                this.physics.world.setBounds(this.curX-512, this.curY-336, this.ROOMWIDTH, this.ROOMHEIGHT);
+                this.physics.world.setBounds(this.curX, this.curY, this.ROOMWIDTH, this.ROOMHEIGHT);
                 
                 this.player.body.reset(512/2, this.ROOMHEIGHT-20);
                 
@@ -91,7 +91,7 @@ class Overworld extends Phaser.Scene {
                     'Linear'
                 );
                 console.log("curx" + this.curX);
-                this.physics.world.setBounds(this.curX-512, this.curY-this.ROOMHEIGHT, this.ROOMWIDTH, this.ROOMHEIGHT);
+                this.physics.world.setBounds(this.curX, this.curY, this.ROOMWIDTH, this.ROOMHEIGHT);
                 
                 this.player.body.reset(this.ROOMWIDTH-20, 336/2);
                 
@@ -112,7 +112,7 @@ class Overworld extends Phaser.Scene {
                     'Linear'
                 );
                 console.log("curx" + this.curX);
-                this.physics.world.setBounds(this.curX-this.ROOMWIDTH, this.curY-this.ROOMHEIGHT, this.ROOMWIDTH, this.ROOMHEIGHT);
+                this.physics.world.setBounds(this.curX, this.curY, this.ROOMWIDTH, this.ROOMHEIGHT);
                 
                 this.player.body.reset(20, 336/2);
                 
@@ -131,7 +131,7 @@ class Overworld extends Phaser.Scene {
                     'Linear'
                 );
                 console.log("curx" + this.curX);
-                this.physics.world.setBounds(this.curX-512, this.curY-336, this.ROOMWIDTH, this.ROOMHEIGHT);
+                this.physics.world.setBounds(this.curX, this.curY, this.ROOMWIDTH, this.ROOMHEIGHT);
                 
                 this.player.body.reset(512/2, 20);
                 
